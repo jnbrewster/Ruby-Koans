@@ -17,16 +17,14 @@ class Proxy
   def initialize(target_object)
     @object = target_object
 		@messages = []
-    # ADD MORE CODE HERE
   end
 
-  # WRITE CODE HERE
-	def called?
-
+	#stuck here
+	def called(missing)
+		return true unless @messages.index(message).nil?
 	end
 
 	def number_of_times_called
-
 	end
 end
 
